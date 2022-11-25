@@ -1,5 +1,6 @@
 /*
 0 - 600px (0em - 37.5em):      Phone
+770px (48.125em)
 600 - 900px (37.5em - 56.25em):    Tablet portrait
 900 - 1200px (56.25em - 75em):   Tablet landscape
 [1200 - 1800] is where our normal styles apply
@@ -416,11 +417,11 @@ textarea {
     letter-spacing: 1px; }
   .header__links {
     display: flex; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 48.125em) {
       .header__links {
         display: none; } }
   .header__link {
-    padding: 2.2rem 2rem;
+    padding: 2.2rem 1.4rem;
     display: inline-block;
     font-size: 1.6rem;
     color: black;
@@ -432,13 +433,13 @@ textarea {
       text-decoration: underline; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
-        padding: 3rem 1.8rem;
+        padding: 3rem 1.4rem;
         font-size: 1.5rem; } }
   .header__main-ham-menu-cont {
     display: none;
     width: 3rem;
     padding: 2.2rem 0; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 48.125em) {
       .header__main-ham-menu-cont {
         display: block; } }
   .header__main-ham-menu {
@@ -459,7 +460,7 @@ textarea {
     .header__sm-menu--active {
       visibility: hidden;
       opacity: 0; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 48.125em) {
         .header__sm-menu--active {
           visibility: visible;
           opacity: 1; } }
