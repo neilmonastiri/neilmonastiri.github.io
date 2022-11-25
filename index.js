@@ -10,14 +10,16 @@ const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 // //Hide nav bar when scrolling down
 const nav = document.querySelector(".header");
 let lastScrollY = window.scrollY;
-document.documentElement.scrollTop;
 
 window.addEventListener("scroll", () => {
-  if (lastScrollY < window.scrollY && screenY < 10) {
-    // console.log("scrolling down");
+  if (lastScrollY < window.scrollY) {
+    // console.log("we are going down");
     nav.classList.add("nav--hidden");
+  } else if (window.scrollY < 100 ) { 
+    // console.log("fixed in placed");
+    nav.classList.remove("nav--hidden");
   } else {
-    // console.log("scrolling up");
+    // console.log("we are going up");
     nav.classList.remove("nav--hidden");
   }
 
