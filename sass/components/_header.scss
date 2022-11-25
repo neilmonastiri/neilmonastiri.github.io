@@ -111,7 +111,7 @@
     &--active {
       visibility: hidden;
       opacity: 0;
-   
+      
       @include respond(phone) {
         visibility: visible;
         opacity: 1;
