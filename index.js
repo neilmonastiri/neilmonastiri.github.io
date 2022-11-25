@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
     // console.log("we are going down");
     nav.classList.add("nav--hidden");
-  } else if (window.scrollY < 100 ) { 
+  } else if (window.scrollY < 200 ) { 
     // console.log("fixed in placed");
     nav.classList.remove("nav--hidden");
   } else {
