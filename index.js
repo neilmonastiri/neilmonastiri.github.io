@@ -12,7 +12,7 @@ const nav = document.querySelector(".header");
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY < 200) {
+  if (window.scrollY < 150) {
     // console.log("fixed in placed");
     nav.classList.remove("nav--hidden");
   } else if (lastScrollY < window.scrollY) { 
