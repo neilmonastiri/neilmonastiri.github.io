@@ -554,9 +554,17 @@ textarea {
       .main-footer__lower {
         padding: 3.5rem 0; } }
 
-  .up-arrow_btn {
+  .up-arrow_btn-cont {
     display: flex;
     justify-content: center;
+    margin: 5px 0 5px 0;
+    padding: -5px;
+  }
+  .up-arrow_btn {
+    transition: transform .3s;
+  }
+  .up-arrow_btn:hover {
+    transform: translateY(-5px);
   }
 
 
