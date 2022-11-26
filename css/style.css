@@ -316,27 +316,31 @@ textarea {
   /* Project cards */
 
   .main-card-container {
-    padding: 0;
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    /* padding: 0;
     display: flex;
     flex-flow: wrap;
     font-family: "Ubuntu", sans-serif;
-    box-sizing: border-box;
-  } @media only screen and (max-width: 56.25em) {
+    box-sizing: border-box; */
+  /* } @media only screen and (max-width: 56.25em) {
     .main-card-container {
       padding: 0;
+    } */
+  } @media only screen and (max-width: 67.5em) {
+    .main-card-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
   }
-  .card-container {
-    flex: 300px;
-    margin: 30px;
-  }
-  .card-container .card {
+
+  .card {
     font-size: 1.8rem;
     position: relative;
-    width: 100%;
-  }
-  .card-container .card a {
-    padding: 30px;
     width: 100%;
     height: 500px;
     border: 3px solid black;
@@ -346,12 +350,57 @@ textarea {
     display: block;
     transition: 0.25s ease;
   } @media only screen and (max-width: 37.5em) {
-    .card-container .card a {
+    .card {
       height: auto;
     }
   }
-  .card-container .card a:hover {
+  .card:hover {
     border: 3px dashed black;
+  }
+
+  .project-card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2.25rem 2rem;
+  }
+  .project-card-inner header {
+    min-height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .project-top .folder__icon{
+    max-width: 40px;
+  }
+  .project-top .external-link__icon{
+    max-width: 20px;
+    max-height: 20px;
+  }
+  
+  .project-title {
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 0px 0px 10px;
+  }
+  .project-tech-list {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    flex-wrap: wrap;
+  }
+  .project-tech-list li {
+    margin-right: 15px;
+    color: #444;
+    font-size: 1.5rem;
   }
 
   /* Contact section */
