@@ -554,6 +554,11 @@ textarea {
       .main-footer__lower {
         padding: 3.5rem 0; } }
 
+  .up-arrow_btn {
+    display: flex;
+    justify-content: center;
+  }
+
 
   /* Skills section */
 
