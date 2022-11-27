@@ -1,12 +1,11 @@
 {
-  "name": "dopefolio",
+  "name": "personal-website-v1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
-    "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/styles.css -o css/styles.css",
+    "compress:css": "node-sass css/styles.css css/styles.css --output-style compressed",
     "build": "npm-run-all prefix:css compress:css"
   },
   "author": "",
